@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_name.png",
+        "source": "/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/src/main/res/drawable-mdpi/ic_action_name.png"
+    },
+    {
+        "merged": "/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_add_icon.png",
+        "source": "/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/src/main/res/drawable-mdpi/ic_add_icon.png"
+    }
+]
