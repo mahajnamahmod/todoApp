@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/487e166a610539cfb89357f397f64e26270fe30c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="518768f3200963fbfec652f498da2c9d39245234">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bff14a12f21608a2844b65c2957481601d3ad061/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/e98530bf7be33269dda0dd5c2a062e57a048ecef/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c5d103b270b3f3b50d8e6b44aa8e068b0de33426">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d3c396fccbca47e53a931f48920a10622dbd2419/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/ede46f0a14350d977f74526fbba5e84762b7f215/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_23514e5bff46b7cde85f00139dabd5b1391ef5bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/8d67a78719b70948f30f9b26fdd40c40d69eff4f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3e61044038fb54cddf6b8dc79f41d2b57f42caf">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e0bf159b8a29675a95d775663240919b9fe89577/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/1f19100f879a1e94f45516187adab43c02bdc665/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d6a04527c17597019dad82777c5094a3d60d1c33">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c94d9c09cc83f39b53b9e61a7d8a159ecdb3c1b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/67dbd92e2428c857f582cbf4e359d755643481ad/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c10d68ab5ea070f15782ae6d3a28d1f1d8f45e">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b2f6eef0bbcb7d7669732bca5f40b3bb53001063/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/65e4a314168dbc8e63de1df79aa5961f4ae61156/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5cc5ef8347a6bafa14556cbd35230aa9b3431bb0">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_91b27f4260e474fef7bc6f592a22908e372d4208/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a6ca4d73a4a8506ff83bfe51786be79cacfc6faa">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0186e71264eee28ce9afd16828c20e5e4524f88a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.0/support-annotations-25.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="dd84903d2e1af25a6081ef9038ad863cb14ca3a0">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_ccf966876f5be6fb70a3e796d88458074975612b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_7eedde5c50f7e1d7d0d3e5e5cce87b45f0ec719e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/9faafd6d440910e4277934efd576e1c8b58b4a71/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="93c1199fcb0a34b980e6fff8350daff62e696ec2">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_673a97fe27a7c36607bcb199e3e75ee294817345/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/3dbb4316546a8aaccd47f21d749c97a3643a4c90/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b746ef0fd46acb5aaf3d9ab9a4cec22c28d3211">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4bdec2d8f73bb9def3954bd7f7af8b9a5816722d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/954bb41963beaae09e3e2fe96d5d8a2e5acb2c4f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="425c7b17887e5c3f8cbdf67ba171bc246f29b42c">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1935c542fb851b2311aa74fed57f81b26ce0e8fd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_6a1e58765e5388e9b6603554bf997c654bb49486/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/4ed3f283746296cebd7dbb18f173184263450902/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="70f23cb87278f89aa51e6f57e8f0fd5266572d95">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_24db71bd67ed2faf0648017e5848f92d93e82747/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/mahmodmahajna/.android/build-cache/f408236d95d21fe7a84fab725dc3b01b66ff03bf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_da39c9147ce505438f4df940846a25d5d5cd0af4/classes.dex" />
+    </item>
+
+</items>
