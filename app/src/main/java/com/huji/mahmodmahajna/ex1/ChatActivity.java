@@ -1,5 +1,6 @@
 package com.huji.mahmodmahajna.ex1;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
@@ -12,9 +13,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
+import android.app.DatePickerDialog;
+import android.widget.DatePicker;
+import android.app.AlertDialog;
+
 
 import java.util.ArrayList;
+import java.util.Date;
+
+import static android.R.id.input;
 
 public class ChatActivity extends AppCompatActivity {
 
@@ -25,7 +34,7 @@ public class ChatActivity extends AppCompatActivity {
     private RecyclerView.LayoutManager cLayoutManager;
     private ChatAdapter cAdapter;
     private ArrayList<Todo> todos;
-    private  EditText editText;
+    private EditText editText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +68,7 @@ public class ChatActivity extends AppCompatActivity {
     }
 
     private void initializeButtonFunctionality() {
-        editText = (EditText) findViewById(R.id.editText);
+//        editText = (EditText) findViewById(R.id.editText);
 //        initializeButton(editText);
     }
 
@@ -68,11 +77,6 @@ public class ChatActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!editText.getText().toString().equals("")) {
-                    cAdapter.addItemToList(new Todo(editText.getText().toString()));
-                    editText.setText("");
-                    recyclerView.scrollToPosition(cAdapter.getItemCount() - 1 );
-                }
             }
         });
     }
@@ -127,16 +131,42 @@ public class ChatActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.add_todo:
-                if (!editText.getText().toString().equals("")) {
-                    cAdapter.addItemToList(new Todo(editText.getText().toString()));
-                    editText.setText("");
-                    recyclerView.scrollToPosition(cAdapter.getItemCount() - 1 );
-                }
+                    android.support.v7.app.AlertDialog.Builder builder = new android.support.v7.app.AlertDialog.Builder(ChatActivity.this);
+                    View dateView =  ChatActivity.this.getLayoutInflater().inflate(R.layout.datepicker_dialog, null);
+                    final Button deleteTodo =  (Button) dateView.findViewById(R.id.delete_todo);
+                    final Button addTodo =  (Button) dateView.findViewById(R.id.add_todo);
+                    final EditText todoText =  (EditText) dateView.findViewById(R.id.editText2);
+                    final DatePicker datePicker = (DatePicker) dateView.findViewById((R.id.date_picker));
+                    builder.setView(dateView);
+                    final android.support.v7.app.AlertDialog dialog = builder.create();
+                    dialog.show();
+                    deleteTodo.setOnClickListener(
+                            new View.OnClickListener() {
+                                public void onClick(View v) {
+                                    dialog.dismiss();
+
+                                }
+                            }
+                    );
+                    addTodo.setOnClickListener(
+                            new View.OnClickListener() {
+                                public void onClick(View v) {
+                                    cAdapter.addItemToList(
+                                            new Todo(todoText.getText().toString(),
+                                            new Date(datePicker.getDayOfMonth(),datePicker.getMonth() + 1,datePicker.getYear())));
+                                    recyclerView.scrollToPosition(cAdapter.getItemCount() - 1 );
+                                    dialog.dismiss();
+
+                                }
+                            }
+                    );
+
                 return true;
 
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
 
 }

@@ -3,15 +3,19 @@ package com.huji.mahmodmahajna.ex1;
 import android.os.Parcel;
 import android.os.Parcelable;
 
+import java.util.Date;
+
 /**
  * Created by mahmodmahajna on 21/03/2017.
  */
 
 public class Todo implements Parcelable{
     private String todo;
+    private Date date;
     public Todo() {}
-    public Todo(String todo) {
+    public Todo(String todo, Date date) {
         this.todo = todo;
+        this.date = date;
     }
     public String getTodo() {
         return todo;
