@@ -44,7 +44,6 @@ public class ChatActivity extends AppCompatActivity {
     private ArrayList<Todo> todos;
     private EditText editText;
     DatabaseHelper myDb;
-//    DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("todoapp-pospc");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -142,6 +141,7 @@ public class ChatActivity extends AppCompatActivity {
     public void viewAll() {
 
         Cursor res = myDb.getAllData();
+
         if(res.getCount() == 0) {
             // show message
             showMessage("Error","Nothing found");

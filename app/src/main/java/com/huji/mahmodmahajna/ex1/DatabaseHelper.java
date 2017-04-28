@@ -15,19 +15,19 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String DATABASE_NAME = "todos.db";
-    public static final String TABLE_NAME = "todo_table";
+    public static final String TABLE_NAME = "todos";
     public static final String COL_1 = "ID";
     public static final String COL_2 = "DATA";
     public static final String COL_3 = "DATE";
 
     public DatabaseHelper(Context context) {
-        super(context, DATABASE_NAME, null, 1);
+        super(context, DATABASE_NAME, null, 2);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
 
-        db.execSQL("create table " + TABLE_NAME +" (ID INTEGER PRIMARY KEY AUTOINCREMENT,DATA TEXT,DATE TEXT)");
+        db.execSQL("CREATE TABLE " + TABLE_NAME +" (ID INTEGER PRIMARY KEY AUTOINCREMENT,DATA TEXT,DATE TEXT)");
     }
 
     @Override
@@ -42,7 +42,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COL_2,name);
         contentValues.put(COL_3,date);
 
-        long result = db.insert(TABLE_NAME,null ,contentValues);
+        long result = db.insert(TABLE_NAME ,null ,contentValues);
         if(result == -1)
             return false;
         else

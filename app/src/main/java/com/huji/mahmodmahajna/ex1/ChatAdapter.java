@@ -30,7 +30,6 @@ import java.util.List;
 class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatHolder> {
     protected List<Todo> todos;
     private Context mContext;
-//    DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("todo");
 
     public ArrayList<Todo> getTodos() {
         return (ArrayList<Todo>) todos;
