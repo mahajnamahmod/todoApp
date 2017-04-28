@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1058606174875",
+    "firebase_url": "https://todoapp-pospc.firebaseio.com",
+    "project_id": "todoapp-pospc",
+    "storage_bucket": "todoapp-pospc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1058606174875:android:ee4efa804197e13c",
+        "android_client_info": {
+          "package_name": "com.huji.mahmodmahajna.ex1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1058606174875-t46vjbnhts5ecla62alg5i7obfknihv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwao9cSYEjEH3C27JlZj0bMzZxpXiWtxo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

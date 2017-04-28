@@ -1,6 +1,7 @@
 package com.huji.mahmodmahajna.ex1;
 
 import android.content.DialogInterface;
+import android.database.Cursor;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,13 @@ import android.app.AlertDialog;
 import java.util.ArrayList;
 import java.util.Date;
 
+//import com.google.firebase.database.ChildEventListener;
+//import com.google.firebase.database.DataSnapshot;
+//import com.google.firebase.database.DatabaseError;
+//import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.FirebaseDatabase;
+//import com.google.firebase.database.ValueEventListener;
+
 import static android.R.id.input;
 
 public class ChatActivity extends AppCompatActivity {
@@ -35,11 +43,14 @@ public class ChatActivity extends AppCompatActivity {
     private ChatAdapter cAdapter;
     private ArrayList<Todo> todos;
     private EditText editText;
+    DatabaseHelper myDb;
+//    DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("todoapp-pospc");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat);
+        myDb = new DatabaseHelper(this);
         initializeButtonFunctionality();
         initializeRecyclerView();
         final LinearLayout buttonLayout = (LinearLayout) findViewById(R.id.my_button_layout);
@@ -54,7 +65,7 @@ public class ChatActivity extends AppCompatActivity {
 //            }
 //
 //        });
-
+    viewAll();
     }
 
     private void initializeRecyclerView() {
@@ -127,6 +138,29 @@ public class ChatActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+
+    public void viewAll() {
+
+        Cursor res = myDb.getAllData();
+        if(res.getCount() == 0) {
+            // show message
+            showMessage("Error","Nothing found");
+            return;
+        }
+
+        StringBuffer buffer = new StringBuffer();
+        while (res.moveToNext()) {
+            cAdapter.addItemToList(new Todo(res.getString(1),new Date(res.getString(2))));
+        }
+
+        // Show all data
+        showMessage("Data",buffer.toString());
+    }
+
+    private void showMessage(String error, String s) {
+    }
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -154,6 +188,14 @@ public class ChatActivity extends AppCompatActivity {
                                     cAdapter.addItemToList(
                                             new Todo(todoText.getText().toString(),
                                             new Date(datePicker.getDayOfMonth(),datePicker.getMonth() + 1,datePicker.getYear())));
+                                   boolean isInserted = myDb.insertData(todoText.getText().toString(),
+                                           new Date(datePicker.getDayOfMonth(),datePicker.getMonth() + 1,datePicker.getYear()).toString());
+                                    if(isInserted == true)
+                                        Toast.makeText(ChatActivity.this,"Data Inserted",Toast.LENGTH_LONG).show();
+                                    else
+                                        Toast.makeText(ChatActivity.this,"Data not Inserted",Toast.LENGTH_LONG).show();
+
+
                                     recyclerView.scrollToPosition(cAdapter.getItemCount() - 1 );
                                     dialog.dismiss();
 

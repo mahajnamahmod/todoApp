@@ -1,4 +1,4 @@
-#Tue Mar 21 18:48:53 IST 2017
+#Fri Apr 28 17:56:41 IDT 2017
 file.2=/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bff14a12f21608a2844b65c2957481601d3ad061/classes.dex
 base.2=/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bff14a12f21608a2844b65c2957481601d3ad061
 file.1=/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.0_ccf966876f5be6fb70a3e796d88458074975612b/classes.dex

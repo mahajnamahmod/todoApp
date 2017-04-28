@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1058606174875-t46vjbnhts5ecla62alg5i7obfknihv1.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://todoapp-pospc.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1058606174875</string>
+    <string name="google_api_key" translatable="false">AIzaSyBwao9cSYEjEH3C27JlZj0bMzZxpXiWtxo</string>
+    <string name="google_app_id" translatable="false">1:1058606174875:android:ee4efa804197e13c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBwao9cSYEjEH3C27JlZj0bMzZxpXiWtxo</string>
+    <string name="google_storage_bucket" translatable="false">todoapp-pospc.appspot.com</string>
+</resources>

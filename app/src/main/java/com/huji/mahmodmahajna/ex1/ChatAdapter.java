@@ -16,7 +16,13 @@ import android.app.DatePickerDialog;
 import android.widget.DatePicker;
 import java.util.ArrayList;
 import java.util.List;
-
+//
+//import com.google.firebase.database.ChildEventListener;
+//import com.google.firebase.database.DataSnapshot;
+//import com.google.firebase.database.DatabaseError;
+//import com.google.firebase.database.DatabaseReference;
+//import com.google.firebase.database.FirebaseDatabase;
+//import com.google.firebase.database.ValueEventListener;
 /**
  * Created by mahmodmahajna on 15/03/2017.
  */
@@ -24,6 +30,7 @@ import java.util.List;
 class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatHolder> {
     protected List<Todo> todos;
     private Context mContext;
+//    DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference("todo");
 
     public ArrayList<Todo> getTodos() {
         return (ArrayList<Todo>) todos;
@@ -52,6 +59,8 @@ class ChatAdapter extends RecyclerView.Adapter<ChatAdapter.ChatHolder> {
         notifyDataSetChanged();
     }
     public void deleteTodo(int position){
+//        dbRef.child(todos.get(position).getTodo()).removeValue();
+
         todos.remove(position);
         Toast.makeText((ChatActivity)mContext, "Todo Deleted!", Toast.LENGTH_SHORT).show();
         notifyDataSetChanged();

@@ -1,4 +1,4 @@
-#Wed Apr 19 22:03:22 IDT 2017
+#Fri Apr 28 17:56:42 IDT 2017
 base.0=/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
 renamed.0=classes.dex
 file.0=/Users/mahmodmahajna/AndroidStudioProjects/ex1/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex
